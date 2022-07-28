@@ -10,7 +10,7 @@ export interface VariantData {
   requiredRank?: Rank;
 }
 
-export interface SkillActionData {
+export interface BasicActionData {
   key: string;
   slug: string;
   compendiumId: string;
@@ -20,9 +20,9 @@ export interface SkillActionData {
   actor: Actor;
 }
 
-export type SkillActionDataParameters = PartialBy<SkillActionData, 'key' | 'actionType' | 'icon' | 'compendiumId'>;
+export type BasicActionDataParameters = PartialBy<BasicActionData, 'key' | 'actionType' | 'icon' | 'compendiumId'>;
 
-export const SKILL_ACTIONS_DATA: Omit<SkillActionDataParameters, 'actor'>[] = [
+export const BASIC_ACTIONS_DATA: Omit<BasicActionDataParameters, 'actor'>[] = [
   {
     slug: 'stride',
     compendiumId: 'M76ycLAqHoAgbcej',

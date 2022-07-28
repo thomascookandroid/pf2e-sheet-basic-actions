@@ -6,7 +6,7 @@ import { ItemData } from '@league-of-foundry-developers/foundry-vtt-types/src/fo
 import { Context } from '@league-of-foundry-developers/foundry-vtt-types/src/foundry/common/abstract/document.mjs';
 import { BaseActor } from '@league-of-foundry-developers/foundry-vtt-types/src/foundry/common/documents.mjs';
 import { ModifierPF2e } from './pf2e';
-import { ActorSkillAction } from './skill-actions';
+import { ActorBasicAction } from './basic-actions';
 
 export interface ValuesList<T extends string = string> {
   value: T[];
@@ -56,7 +56,7 @@ export type ItemConstructor = new (
 type ActionFunction = (options: { event: JQuery.Event; modifiers: ModifierPF2e[] }) => void;
 
 export interface PF2eActorFlag {
-  actions: Record<string, ActorSkillAction>;
+  actions: Record<string, ActorBasicAction>;
   allVisible: boolean;
 }
 
@@ -70,7 +70,7 @@ declare global {
   }
   interface FlagConfig {
     Actor: {
-      ['pf2e-sheet-skill-actions']: PF2eActorFlag;
+      ['pf2e-sheet-basic-actions']: PF2eActorFlag;
     };
   }
   interface Game {

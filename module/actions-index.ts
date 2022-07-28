@@ -1,7 +1,7 @@
 import { ItemPF2e } from './globals';
-import { SKILL_ACTIONS_DATA } from './skill-actions-data';
+import { BASIC_ACTIONS_DATA } from './basic-actions-data';
 
-const ACTION_IDS = SKILL_ACTIONS_DATA.map((row) => row.compendiumId);
+const ACTION_IDS = BASIC_ACTIONS_DATA.map((row) => row.compendiumId);
 
 export class ActionsIndex extends Map<string, ItemPF2e> {
   private static _instance: ActionsIndex;

@@ -81,11 +81,11 @@ export class BasicAction {
     };
   }
 
-  private get actorData(): ActorSkillAction | undefined {
+  private get actorData(): ActorBasicAction | undefined {
     return Flag.get(this.actor, `actions.${this.key}`);
   }
 
-  async update(data: ActorSkillAction) {
+  async update(data: ActorBasicAction) {
     await Flag.set(this.actor, `actions.${this.key}`, data);
   }
 
@@ -93,7 +93,7 @@ export class BasicAction {
     await this.update({ visible: visible });
   }
 
-  async rollSkillAction(event) {
+  async rollBasicAction(event) {
     const variant = this.variants[parseInt(event.currentTarget.dataset.variant)];
 
     if (variant.assuranceTotal) {
@@ -195,13 +195,13 @@ export class BasicAction {
   }
 }
 
-export class SkillActionCollection extends Collection<SkillAction> {
-  static allActionsFor(actor): SkillAction[] {
-    return deepClone(SKILL_ACTIONS_DATA).map((row) => new SkillAction({ ...row, actor: actor }));
+export class BasicActionCollection extends Collection<BasicAction> {
+  static allActionsFor(actor): BasicAction[] {
+    return deepClone(BASIC_ACTIONS_DATA).map((row) => new BasicAction({ ...row, actor: actor }));
   }
 
-  add(action: SkillAction) {
-    if (this.get(action.key)) console.warn('Overwriting existing skill action', action.key);
+  add(action: BasicAction) {
+    if (this.get(action.key)) console.warn('Overwriting existing basic action', action.key);
     this.set(action.key, action);
   }
 
