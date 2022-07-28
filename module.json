@@ -15,7 +15,7 @@
     }
   ],
   "url": "https://github.com/thomascookandroid/pf2e-sheet-basic-actions",
-  "manifest": "https://github.com/thomascookandroid/pf2e-sheet-basic-actions/blob/main/module.json",
-  "download": "https://github.com/thomascookandroid/pf2e-sheet-basic-actions/blob/main/releases/module.zip",
+  "manifest": "https://thomascookandroid.github.io/pf2e-sheet-basic-actions/module.json",
+  "download": "https://thomascookandroid.github.io/pf2e-sheet-basic-actions/releases/module.zip",
   "system": ["pf2e"]
 }
