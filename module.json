@@ -1,0 +1,34 @@
+{
+  "name": "pf2e-sheet-basic-actions",
+  "title": "PF2e Character Sheet Basic Actions",
+  "description": "It puts the basic actions on the sheet",
+  "version": "0.1.0",
+  "author": "Thomas Cook",
+  "authors": [
+    {
+      "name": "Thomas Cook",
+      "email": "thomascookandroid@outlook.com",
+      "discord": ""
+    }
+  ],
+  "minimumCoreVersion": "0.8.9",
+  "compatibleCoreVersion": "9",
+  "esmodules": ["module/sheet-basic-actions.js"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": "https://github.com/thomascookandroid/pf2e-sheet-skill-actions/blob/test/release/releases/module.zip",
+  "system": ["pf2e"],
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+    }
+  ]
+}

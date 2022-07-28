@@ -1,0 +1,10 @@
+{
+  "pf2e-sheet-basic-actions": {
+    "Title": "Basic Actions",
+    "Settings": {
+    },
+    "UnequipAll": {
+      "Tooltip": "Toggle hidden actions. Hold alt when clicking to make unequip/equip all actions."
+    }
+  }
+}
